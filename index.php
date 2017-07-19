@@ -7,4 +7,5 @@
  */
 $connection = require_once 'connect_database.php';
 echo '<pre>';
+// https://www.w3schools.com/php/php_mysql_create.asp
 print_r($connection);

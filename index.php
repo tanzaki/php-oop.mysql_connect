@@ -20,3 +20,5 @@ $connection->query($sql_create_table_tasks);
 // https://www.w3schools.com/php/php_mysql_insert.asp
 $mysqli_result = $connection->query('INSERT INTO `tasks` (`title`) VALUES ("TASK.TITLE");');
 var_export($mysqli_result);
+// https://www.w3schools.com/php/php_mysql_insert_lastid.asp
+echo ("<div>Last inserted ID in this Connection: $connection->insert_id</div>");

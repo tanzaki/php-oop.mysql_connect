@@ -6,4 +6,5 @@
  * Time: 6:47 PM
  */
 $connection = require_once 'connect_database.php';
+echo '<pre>';
 print_r($connection);

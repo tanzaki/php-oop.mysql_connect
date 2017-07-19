@@ -19,3 +19,11 @@ echo '<div style="color:Blue">INFO: this SQL string was auto-generated from <a h
 $connection->query($sql_create_table_tasks);
 // https://www.w3schools.com/php/php_mysql_insert.asp
 $connection->query('INSERT INTO `tasks` (`title`) VALUES ("TASK.TITLE");');
+// https://www.w3schools.com/php/php_mysql_select.asp
+$sql = "SELECT * FROM `tasks`";
+$mysqli_result = $connection->query($sql);
+if ($mysqli_result->num_rows > 0) {
+    print_r($mysqli_result);
+} else {
+    echo "0 results";
+}

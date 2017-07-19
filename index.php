@@ -17,3 +17,6 @@ $connection->select_db($database_name);
 $sql_create_table_tasks = 'CREATE TABLE `tasks` ( `id` INT NOT NULL AUTO_INCREMENT , `title` TEXT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;';
 echo '<div style="color:Blue">INFO: this SQL string was auto-generated from <a href="//localhost/phpmyadmin" target="_blank">phpMyAdmin</a></div>';
 $connection->query($sql_create_table_tasks);
+// https://www.w3schools.com/php/php_mysql_insert.asp
+$mysqli_result = $connection->query('INSERT INTO `tasks` (`title`) VALUES ("TASK.TITLE");');
+var_export($mysqli_result);

@@ -23,7 +23,7 @@ $connection->query('INSERT INTO `tasks` (`title`) VALUES ("TASK.TITLE");');
 $sql = "SELECT * FROM `tasks`";
 $mysqli_result = $connection->query($sql);
 if ($mysqli_result->num_rows > 0) {
-    print_r($mysqli_result);
+    print_r($mysqli_result->fetch_all());
 } else {
     echo "0 results";
 }
